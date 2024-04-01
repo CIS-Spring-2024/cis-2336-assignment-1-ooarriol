@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<header>
+<h1>Cougar Den</h1>
+<img src="images/uhsuagr.png">
+
+
+</header>
+<div class="topnav"> 
+    <a href="index.html" >Home</a>
+    <a href="contact.html" class="active" >Contact</a>
+    <a href="ownersbiography.html">About</a>
+
+</div>
+<style>
+form{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input, textarea,select{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    font-size: 18px;
+    background-color: beige;
+
+}
+
+button:hover{
+    background-color: red;
+}
+</style>
+<br><br><br>
+<form method="post">
+    <label>Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Phone</label>
+    <input type="tel" id="phone" required>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+
+    <lable>Password:</lable>
+    <input type="password" id="password">
+
+    <lable>Date of Birth</lable>
+    <input type="date" id="dob"
+
+    <p>Preferred contact method:</p>
+    <div class="radio-group">
+        <input type="radio" id="contact_email"
+        value="email">
+        <label>Email</label>
+
+        <input type="radio" id="contact_phone" value="phone">
+        <label>Phone</label>
+
+    </div>
+    <button type="submit" style="width: 200px; height: 50px; position: relative; top: 50%; left: 20%">Submit</button>
+
+</form>
+<footer>
+    <p>&copy; University of Houston Sugarland. All Right Reserved</p>
+    </footer>
+</body>
+</html>
